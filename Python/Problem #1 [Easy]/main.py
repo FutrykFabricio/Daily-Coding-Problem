@@ -12,4 +12,4 @@ def solve(n_list, k):
 
     return False
 
-print(solve(n_list, k))
+solve(n_list, k)

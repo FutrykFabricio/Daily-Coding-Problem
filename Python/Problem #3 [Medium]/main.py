@@ -26,15 +26,5 @@ def deserialize(serialization):
     nodes = serialization.split(',');
     return deserializeHelper(nodes)
 
-
-def printTree(node):
-    print(node.val)
-
-    if node.left:
-        printTree(node.left)
-    
-    if node.right:
-        printTree(node.right)
-
 node = Node('root', Node('left', Node('left.left')), Node('right'))
 assert deserialize(serialize(node)).left.left.val == 'left.left'

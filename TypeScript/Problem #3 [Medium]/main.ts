@@ -34,13 +34,6 @@ let deserialize = (serialization: string):TreeNode => {
     return deserializeHelper(nodes);
 }
 
-let printTree = (node) => {
-    if(!node) return;
-    console.log(node.value);
-    printTree(node.left)
-    printTree(node.right)
-}
-
 let node: TreeNode = new TreeNode('root', new TreeNode('left', new TreeNode('left.left')), new TreeNode('right'));
 
 console.log(deserialize(serialize(node)).left.left.value === "left.left")

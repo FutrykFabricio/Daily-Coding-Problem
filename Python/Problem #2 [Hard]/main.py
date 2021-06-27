@@ -1,4 +1,4 @@
-_input = [3, 4, -1, 1]
+_input = [1, 2, 3, 4, 5]
 
 def product_of_list(n_list, curr_index):
     product = 1
